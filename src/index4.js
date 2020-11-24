@@ -41,6 +41,7 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`); 
 }
 
 function searchCity(city) {
@@ -49,6 +50,7 @@ function searchCity(city) {
   //console.log(apiUrl);
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+
 
 function handleSubmit(event) {
   //debugger;
@@ -71,7 +73,6 @@ searchForm.addEventListener("submit", handleSubmit);
 timeElement.innerHTML = formatDate(currentTime);
 
 searchCity("Montreal");
-
 
 
 

@@ -6,17 +6,13 @@ body{
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
-.card-body-small {
-    padding-left: 20px;
-}
-
 .container{
+    max-width: 1000px;
     padding: 50px 100px;
     margin: 10px 20px;
 }
 
 .weather-app {
-    position: relative;
     float: right;
     padding: 0 16px;
     bottom: 50px; 
@@ -25,24 +21,15 @@ body{
 h1{
     font-size: 25px;
     font-weight: 100px;
-    display: block;
     line-height: 28px;
-    margin: auto;
+    margin-bottom: 0px;
 
 }
 
 .date-and-time{
-    margin: 0;
-    padding: 0;
+    margin-bottom: -60px;
+    padding: 1px;
 
-}
-
-.form-control {
-  font-size: 13px;
-}
-
-rectangular{
-    margin: 20px 16px 24px;
 }
 
 li{
@@ -53,9 +40,28 @@ li{
     list-style: none;
 }
 
-.vertical{
-    border-left: 5px solid black;
+.form-control {
+  font-size: 13px;
 }
+
+.col-xl {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.current-sky img {
+  margin-right: 10px;
+  width: 64px;
+  height: 64px;
+}
+
+.units {
+  position: relative;
+  font-size: 18px;
+  top: -32px;
+}
+
 
 .weather-percentage {
     position: relative;
@@ -77,4 +83,3 @@ li{
     margin: 0 0 20px;
     padding: 0 20px;
 }
-

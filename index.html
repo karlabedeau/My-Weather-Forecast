@@ -11,149 +11,149 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
+    
     <div class="container">
+        <div class="vanilla-weather-app">
+            <div class="card">
+                <div class="card-body">
     
-        <div class="card">
-            <div class="card-body">
+                    <h1 id="city">
     
-                <h1 id="city">
+                    </h1>
+                    <ul class="date-and-time">
+                        <li id="time"></li>
+                        <li id="description">
     
-                </h1>
-                <ul class="date-and-time">
-                    <li id="time"></li>
-                    <li id="description">
-    
-                    </li>
-                </ul>
-                <br />
-                <form class="weather-app" id="search-form">
-                    <div class="row">
-                        <input type="text" placeholder="Enter city name here" class="form-control col-9" id="city-input" />
-                        <input type="submit" value="Search" class="form-control col-3 btn btn-primary" />
-                    </div>
-                </form>
-                <br />
-                <br />
-    
-    
-    
-                <div class="card" class="rectangular">
-                    <div class="card-body">
+                        </li>
+                    </ul>
+                    <br />
+                    <form class="weather-app" id="search-form">
                         <div class="row">
-                            <div class="col-sm">
-                                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy" />
-                                <span class="current-temperature"></span>°C
+                            <input type="text" placeholder="Enter city name here" class="form-control col-9"
+                                id="city-input" />
+                            <input type="submit" value="Search" class="form-control col-3 btn btn-primary" />
+                        </div>
+                    </form>
+                    <br />
+                    <br />
     
-                                <div class="vertical"></div>
     
-                                <div class="col-sm">
-                                    <forms class="float-right">
-                                        <ul class="weather-percentage">
-                                            <li>
-                                                
-                                            </li>
-                                            <li>
-                                                Humidity: <span id="humidity"></span>%
-                                            </li>
-                                            <li>
-                                                Wind: <span id="wind"></span>km/h
-                                            </li>
-                                        </ul>
-                                    </forms>
+    
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl current-sky">
+                                    <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy"
+                                        id="icon" />
+                                    <span class="current-temperature"></span><span class="units">°C</span>
+    
+                                    <div class="col-sm">
+                                        <forms class="float-right">
+                                            <ul class="weather-percentage">
+                                                <li>
+                                                    Humidity: <span id="humidity"></span>%
+                                                </li>
+                                                <li>
+                                                    Wind: <span id="wind"></span>km/h
+                                                </li>
+                                            </ul>
+                                        </forms>
+    
+    
+    
+                                    </div>
+    
+    
     
     
     
                                 </div>
-    
-    
-    
-    
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <br />
-                <p>
-                    Forecast for the next 5 days
-                </p>
-    
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Mon</h5>
-                                <p class="card-text">
-                                    <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" <img src=""
-                                        alt="cloudy-again">
-                                </p>
-                                13c
                             </div>
                         </div>
                     </div>
     
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Tue</h5>
-                                <p class="card-text">
-                                    <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-                                        alt="cloudy-sunny">
-                                </p>
-                                12c
+                    <br />
+                    <p>
+                        Forecast for the next 5 days
+                    </p>
+    
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mon</h5>
+                                    <p class="card-text">
+                                        <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy-again">
+                                    </p>
+                                    13°c
+                                </div>
                             </div>
                         </div>
-                    </div>
     
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Wed</h5>
-                                <p class="card-text">
-                                    <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-                                        alt="cloudy-sunny-again">
-                                </p>
-                                11c
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tue</h5>
+                                    <p class="card-text">
+                                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                                            alt="cloudy-sunny">
+                                    </p>
+                                    12°c
+                                </div>
                             </div>
                         </div>
-                    </div>
     
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Thu</h5>
-                                <p class="card-text">
-                                    <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
-                                        alt="cloudy-rainy">
-                                </p>
-                                10c
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wed</h5>
+                                    <p class="card-text">
+                                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                                            alt="cloudy-sunny-again">
+                                    </p>
+                                    11°c
+                                </div>
                             </div>
                         </div>
-                    </div>
     
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Fri</h5>
-                                <p class="card-text">
-                                    <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
-                                        alt="cloundy-rainy-again">
-                                </p>
-                                9c
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Thu</h5>
+                                    <p class="card-text">
+                                        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+                                            alt="cloudy-rainy">
+                                    </p>
+                                    10°c
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="footer">
-                        This <a class="open" href="https://github.com/karlabedeau/My-Weather-Forecast"
-                            target="_blank">Open-source code </a> and <a href="https://peaceful-liskov-c2f7e7.netlify.app/" target="_blank">Hosted on Netlify </a> weather report was build by Karla Bedeau
-                    </div>
+    
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fri</h5>
+                                    <p class="card-text">
+                                        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                                            alt="cloundy-rainy-again">
+                                    </p>
+                                    9°c
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            This <a class="open" href="https://github.com/karlabedeau/My-Weather-Forecast"
+                                target="_blank">Open-source code </a> and
+                            <a href="https://peaceful-liskov-c2f7e7.netlify.app/" target="_blank">Hosted on Netlify </a>
+                            weather report was build by
+                            Karla Bedeau
+                        </div>
     
     
+                    </div>
                 </div>
             </div>
         </div>
-    
     
     </div>
     
