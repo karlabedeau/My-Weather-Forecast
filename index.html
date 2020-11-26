@@ -9,6 +9,8 @@
     
     <link href="src/styleplus3.css" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -43,11 +45,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-xl current-sky">
-                                    <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy"
-                                        id="icon" />
+                                    <img src="#" alt="cloudy" id="icon" />
                                     <span class="current-temperature"></span><span class="units">°C</span>
     
-                                    <div class="col-sm">
+                                    <div class="col-12">
                                         <forms class="float-right">
                                             <ul class="weather-percentage">
                                                 <li>
@@ -59,98 +60,30 @@
                                             </ul>
                                         </forms>
     
-    
-    
                                     </div>
-    
-    
-    
-    
-    
                                 </div>
                             </div>
                         </div>
                     </div>
+    
+                    <img class="seasons" src="images/season_change.png" width="100"></img>
+                    <p class="ending-remark">Have a nice Day!</p>
     
                     <br />
-                    <p>
-                        Forecast for the next 5 days
+                    <p class="every">
+                        Forecast every 3 hours
                     </p>
     
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mon</h5>
-                                    <p class="card-text">
-                                        <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy-again">
-                                    </p>
-                                    13°c
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tue</h5>
-                                    <p class="card-text">
-                                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-                                            alt="cloudy-sunny">
-                                    </p>
-                                    12°c
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Wed</h5>
-                                    <p class="card-text">
-                                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-                                            alt="cloudy-sunny-again">
-                                    </p>
-                                    11°c
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Thu</h5>
-                                    <p class="card-text">
-                                        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
-                                            alt="cloudy-rainy">
-                                    </p>
-                                    10°c
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Fri</h5>
-                                    <p class="card-text">
-                                        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
-                                            alt="cloundy-rainy-again">
-                                    </p>
-                                    9°c
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer">
-                            This <a class="open" href="https://github.com/karlabedeau/My-Weather-Forecast"
-                                target="_blank">Open-source code </a> and
-                            <a href="https://peaceful-liskov-c2f7e7.netlify.app/" target="_blank">Hosted on Netlify </a>
-                            weather report was build by
-                            Karla Bedeau
-                        </div>
-    
-    
+                    <div class="row weather-forecast" id="forecast"></div>
+                    <div class="footer">
+                        This <a class="open" href="https://github.com/karlabedeau/My-Weather-Forecast"
+                            target="_blank">Open-source code </a> and
+                        <a href="https://peaceful-liskov-c2f7e7.netlify.app/" target="_blank">Hosted on Netlify </a> weather
+                        report was build by
+                        Karla Bedeau
                     </div>
+    
+    
                 </div>
             </div>
         </div>
